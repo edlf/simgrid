@@ -5,6 +5,7 @@
 # FILES_CONTAINING_UNITTESTS and have a pleasant day.
 
 set(FILES_CONTAINING_UNITTESTS
+  src/xbt/exception.cpp
   src/xbt/cunit.c
   src/xbt/ex.c
   src/xbt/dynar.c

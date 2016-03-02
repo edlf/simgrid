@@ -242,6 +242,7 @@ set(XBT_SRC
   src/xbt/RngStream.c
   src/xbt/automaton/automaton.c
   src/xbt/automaton/automatonparse_promela.c
+  src/xbt/exception.cpp
   src/xbt/config.c
   src/xbt/cunit.c
   src/xbt/dict.c
@@ -669,6 +670,7 @@ set(headers_to_install
   include/xbt/automaton.h
   include/xbt/automaton.hpp
   include/xbt/base.h
+  include/xbt/exception.hpp
   include/xbt/config.h
   include/xbt/cunit.h
   include/xbt/dict.h

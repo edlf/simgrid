@@ -581,6 +581,7 @@ static void xbt_log_connect_categories(void)
   XBT_LOG_CONNECT(xbt_parmap);
   XBT_LOG_CONNECT(xbt_sync);
   XBT_LOG_CONNECT(xbt_sync_os);
+  XBT_LOG_CONNECT(xbt_exception);
 
 #ifdef simgrid_EXPORTS
   /* The following categories are only defined in libsimgrid */

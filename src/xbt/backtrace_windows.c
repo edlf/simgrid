@@ -346,3 +346,7 @@ char **backtrace_symbols(void *const *buffer, int size)
 
   return strings;
 }
+
+int xbt_backtrace_no_malloc(void **array, int size) {
+  return 0;
+}
