@@ -109,6 +109,8 @@ public:
 
   /** @brief Get the speed, accounting for the trace load and provided process load instead of the real current one */
   virtual double getSpeed(double load);
+  /** @brief Set the speed */
+  virtual void setSpeed(double);
 
 protected:
   /** @brief Take speed changes (either load or max) into account */

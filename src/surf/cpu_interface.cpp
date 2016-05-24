@@ -210,6 +210,10 @@ double Cpu::getSpeed(double load)
   return load * speed_.peak;
 }
 
+void Cpu::setSpeed(double sp){
+	speed_.peak = sp;
+}
+
 double Cpu::getAvailableSpeed()
 {
 /* number between 0 and 1 */

@@ -157,6 +157,12 @@ double Host::powerPeakAt(int pstate_index)
 double Host::speed() {
   return pimpl_cpu->getSpeed(1.0);
 }
+
+/** @brief Set the speed of the cpu associated to a host */
+void Host::setSpeed(double sp) {
+  pimpl_cpu->setSpeed(sp);
+}
+
 /** @brief Returns the number of core of the processor. */
 int Host::core_count() {
   return pimpl_cpu->getCore();

@@ -68,6 +68,7 @@ public:
   bool isOff() { return !isOn(); }
 
   double speed();
+  void setSpeed(double);
   int core_count();
   xbt_dict_t properties();
   const char*property(const char*key);

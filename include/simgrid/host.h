@@ -51,6 +51,7 @@ XBT_PUBLIC(xbt_dict_t) sg_host_get_mounted_storage_list(sg_host_t host);
 XBT_PUBLIC(xbt_dynar_t) sg_host_get_attached_storage_list(sg_host_t host);
 // =========== user-level functions ===============
 XBT_PUBLIC(double) sg_host_speed(sg_host_t host);
+XBT_PUBLIC(void) sg_host_set_speed(sg_host_t host, double newSpeed);
 XBT_PUBLIC(double) sg_host_get_available_speed(sg_host_t host);
 
 XBT_PUBLIC(int) sg_host_get_nb_pstates(sg_host_t host);

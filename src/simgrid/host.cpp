@@ -124,6 +124,13 @@ double sg_host_speed(sg_host_t host)
   return host->speed();
 }
 
+// =========== user-level functions ===============
+// ================================================
+/** @brief Changes total speed of a host */
+void sg_host_set_speed(sg_host_t host, double newSpeed){
+  host->setSpeed(newSpeed);
+}
+
 double sg_host_get_available_speed(sg_host_t host)
 {
   return host->pimpl_cpu->getAvailableSpeed();
