@@ -127,7 +127,8 @@ double sg_host_speed(sg_host_t host)
 // =========== user-level functions ===============
 // ================================================
 /** @brief Changes total speed of a host */
-void sg_host_set_speed(sg_host_t host, double newSpeed){
+void sg_host_set_speed(sg_host_t host, double newSpeed)
+{
   host->setSpeed(newSpeed);
 }
 

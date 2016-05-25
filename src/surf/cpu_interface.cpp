@@ -211,7 +211,9 @@ double Cpu::getSpeed(double load)
 }
 
 void Cpu::setSpeed(double sp){
-	speed_.peak = sp;
+  speed_.peak = sp;
+  lmm_update_constraint_bound(getModel()->getMaxminSystem(), getConstraint(), speed_.peak * speed_.scale);
+  onSpeedChange();
 }
 
 double Cpu::getAvailableSpeed()
